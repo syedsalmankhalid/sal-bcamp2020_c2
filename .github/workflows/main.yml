@@ -26,7 +26,6 @@ jobs:
           node-version: 12
 
       - name: GitHub Action for Yarn Pkg
-<<<<<<< HEAD
         uses: Borales/actions-yarn@v2.3.0
         with:
           # Yarn command:
@@ -35,16 +34,6 @@ jobs:
       - name: creating build
         run: yarn build
 
-=======
-        uses: Borales/actions-yarn@v2.3.0   
-        with:
-          # Yarn command:  
-          cmd: install # yarn install / npm install
-           
-      - name: creating build
-        run: yarn build
-           
->>>>>>> 05cb2e31a3fae64bf519aafab8cdf6e3f879178c
       - name: Installing surge
         run: npm install -g surge
 
