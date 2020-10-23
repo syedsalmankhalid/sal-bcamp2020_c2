@@ -27,15 +27,15 @@ jobs:
           node-version: 12
           
       - name: GitHub Action for Yarn Pkg
-        uses: funkyremi/yarn-github-action@1.0.0   
+        uses: Borales/actions-yarn@v2.3.0   
         with:
           # Yarn command:  
-          cmd: install 
+          cmd: install # yarn install / npm install
            
       - name: creating build
         run: yarn build
            
-      - name: Intalling surge
+      - name: Installing surge
         run: npm install -g surge
         
       - name: deploying to surge
